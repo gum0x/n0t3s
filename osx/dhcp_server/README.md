@@ -9,13 +9,13 @@ This is useful in order to give IP to raspberry or to a PC directly connecter to
 ## Howto
 
 ```bash
-# Enabling IP forwaeding
+# Enabling IP forwarding
 sudo sysctl -w net.inet.ip.forwarding=1
 
 # Connect the ethernet cable and configure the IP
 sudo ifconfig en3 add 192.168.2.254/24
 
-# Enbling masquerade 
+# Enabling masquerade 
 sudo pfctl -f pfctl.conf -e
 
 # start the dnsmasq process
